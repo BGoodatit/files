@@ -1,0 +1,19 @@
+2024-04-18 19:41:20,131 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 19:41:20,132 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2024-04-18 19:41:20,158 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'import']
+2024-04-18 19:41:20,201 DEBUG    root            Running [gcloud.compute.images.import] with arguments: [--source-file: "gs://ffox-instance", IMAGE_NAME: "ffox.ova"]
+2024-04-18 19:41:20,201 DEBUG    root            (gcloud.compute.images.import) Invalid value for [IMAGE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/images/import.py", line 318, in Run
+    _CheckImageName(args.image_name)
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/images/import.py", line 116, in _CheckImageName
+    raise exceptions.InvalidArgumentException('IMAGE_NAME', name_message)
+googlecloudsdk.calliope.exceptions.InvalidArgumentException: Invalid value for [IMAGE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+2024-04-18 19:41:20,202 ERROR    root            (gcloud.compute.images.import) Invalid value for [IMAGE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+2024-04-18 19:41:20,206 DEBUG    root            Metrics reporting process started...

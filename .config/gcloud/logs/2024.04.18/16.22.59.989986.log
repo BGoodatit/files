@@ -1,0 +1,8 @@
+2024-04-18 16:22:59,996 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 16:22:59,997 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-04-18 16:23:00,053 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'import']
+2024-04-18 16:23:00,089 ERROR    root            (gcloud.compute.instances.import) unrecognized arguments: Machines.localized/ffox.ova 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+2024-04-18 16:23:00,092 DEBUG    root            Metrics reporting process started...

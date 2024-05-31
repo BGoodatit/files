@@ -1,0 +1,22 @@
+2024-04-18 19:41:04,131 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 19:41:04,140 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2024-04-18 19:41:04,193 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'import']
+2024-04-18 19:41:04,243 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-04-18 19:41:04,352 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-04-18 19:41:04,696 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-04-18 19:41:04,714 DEBUG    root            Running [gcloud.compute.images.import] with arguments: [--source-file: "gs://ffox-instance", IMAGE_NAME: "ff.ova"]
+2024-04-18 19:41:04,714 DEBUG    root            (gcloud.compute.images.import) Invalid value for [IMAGE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/images/import.py", line 318, in Run
+    _CheckImageName(args.image_name)
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/images/import.py", line 116, in _CheckImageName
+    raise exceptions.InvalidArgumentException('IMAGE_NAME', name_message)
+googlecloudsdk.calliope.exceptions.InvalidArgumentException: Invalid value for [IMAGE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+2024-04-18 19:41:04,717 ERROR    root            (gcloud.compute.images.import) Invalid value for [IMAGE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+2024-04-18 19:41:04,726 DEBUG    root            Metrics reporting process started...

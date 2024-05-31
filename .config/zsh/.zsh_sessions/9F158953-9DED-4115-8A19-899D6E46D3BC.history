@@ -1,0 +1,12 @@
+# Dorothy initialization\
+source ~/.dorothy/init.sh
+# Dorothy initialization\
+source ~/.dorothy/init.zsh
+source ~/.zshrc
+code ~/.zshrc
+srcconfig
+# Dorothy initialization\
+source ~/.dorothy/init.sh
+bash -ic "$(curl -fsSL https://dorothy.bevry.me/install)"\
+# if your shell doesn't recognize any of the above syntax, run `bash -i` then try again
+zsh

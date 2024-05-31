@@ -1,0 +1,148 @@
+01/03/2024 05:00:30 Program.Start Product=dr.fone, Version=13.5.3.1077
+01/03/2024 05:00:30 Program.InitLog
+01/03/2024 05:00:30 ------DrFoneToolKitMac------args:/Applications/Wondershare Dr.Fone.app/Contents/MonoBundle/Wondershare Dr.Fone.exe
+01/03/2024 05:00:30 ------DrFoneToolKitMac------args:/run:Toolkit
+01/03/2024 05:00:30 GetPathRoot 2:
+01/03/2024 05:00:30 GetPathRoot 22:
+01/03/2024 05:00:30 GetPathRoot 22 path:/Users/adriot/Documents/Wondershare/dr.fone/Backup
+01/03/2024 05:00:30 GetPathRoot 22 WorkingDirectory path:/Users/adriot
+01/03/2024 05:00:30 AvailableFreeSpace 1:756395270144
+01/03/2024 05:00:30 Program.InitBugSplat...
+01/03/2024 05:00:30 Program.InitBugSplat done.
+01/03/2024 05:00:30 Operating System: Unix 23.2.0.0
+01/03/2024 05:00:30 Friendly Version: MaxOSX OS64Bits
+01/03/2024 05:00:30 Language: English (United States)
+01/03/2024 05:00:30 ProcessorCount: 16
+01/03/2024 05:00:31 Program.InitCustomize...
+01/03/2024 05:00:31 Program.InitCustomize done.
+01/03/2024 05:00:31 InitDataBaseInfo Success
+01/03/2024 05:00:31 [Sparrow] GetClientsign Start.
+01/03/2024 05:00:31 [Sparrow] -GetClientsign Exceptionget_clientsign
+01/03/2024 05:00:31 Sparrow Clientsign
+01/03/2024 05:00:31 start CreateClientSign
+01/03/2024 05:00:31 CreateClientSign retcode=0 value={67F7F985-0887-506A-A4A1-C423694955C6}
+01/03/2024 05:00:31 dr.fone Clientsign{67F7F985-0887-506A-A4A1-C423694955C6}
+01/03/2024 05:00:32 [WSID] start Init
+01/03/2024 05:00:33 [WSID] Init completed code=Suceess
+01/03/2024 05:00:34 Program.InitMainForm...
+01/03/2024 05:00:34 macOSVersion :ProductName:		macOS
+ProductVersion:		14.2.1
+BuildVersion:		23C71
+
+01/03/2024 05:00:34 OS Version :14.2.1
+01/03/2024 05:00:34 WsidService is Running :False
+01/03/2024 05:00:34 https://imei-api.wondershare.com/v1/common/get-activity-info?type=drfone&name=black_friday
+01/03/2024 05:00:34 [Get Pid ]: 3361
+01/03/2024 05:00:34 [Get SKU ]: sku-ween
+01/03/2024 05:00:40 MainForm.Init Addin done.
+01/03/2024 05:00:40 MainForm.Init Addin done.
+01/03/2024 05:00:40 MainForm.Init Addin done.
+01/03/2024 05:00:41 MainForm.Init LocalList ToView done.
+01/03/2024 05:00:41 MainForm.Init modules list done.
+01/03/2024 05:00:41 Program.InitMainForm done.
+01/03/2024 05:00:41 Program.Run
+01/03/2024 05:00:41 [LoadBackupsPackageHelper] backup package starts to be loaded
+01/03/2024 05:00:41 Access to the path '/Users/adriot/Library/Application Support/MobileSync/Backup' is denied.
+01/03/2024 05:00:41 [LoadPackages] bak path : /Users/adriot/Documents/Wondershare/dr.fone/Backup
+01/03/2024 05:00:41 [LoadBackupsPackageHelper] backup package is loaded
+01/03/2024 05:00:41 [LoadBackupsPackageHelper] Backup package loading takes time ：00:00:00.0537310
+01/03/2024 05:00:41 RequestPriceTask begin： 33614243LEN13ina
+01/03/2024 05:00:41 RequestPriceTask begin： 33614242LEN13ina
+01/03/2024 05:00:41 RequestPriceTask begin： 55484240LEN13ina
+01/03/2024 05:00:41 RequestPriceTask begin： 55484246LEN13ina
+01/03/2024 05:00:41 RequestPriceTask begin： 55484247LEN13ina
+01/03/2024 05:00:41 RequestPriceTask begin： 33614241LEN13ina
+01/03/2024 05:00:42 ConnectionHub.OnCppListenDevice begin.
+01/03/2024 05:00:42 ConnectionHub.OnCppListenDevice end.
+01/03/2024 05:00:42 [WSID] start IsLogined
+01/03/2024 05:00:42 [WSID] start QueryUserInfo
+01/03/2024 05:00:42 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:00:42 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:00:43 SetSystemSleep start
+01/03/2024 05:00:43 [WSID] start IsLogined
+01/03/2024 05:00:43 [WSID] start QueryUserInfo
+01/03/2024 05:00:43 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:00:43 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:00:43 Start check ad link
+01/03/2024 05:00:43 RequestPriceTask end： 33614241LEN13ina
+01/03/2024 05:00:43 RequestPriceTask end： 33614242LEN13ina
+01/03/2024 05:00:43 RequestPriceTask end： 55484246LEN13ina
+01/03/2024 05:00:43 RequestPriceTask end： 33614243LEN13ina
+01/03/2024 05:00:43 RequestPriceTask end： 55484240LEN13ina
+01/03/2024 05:00:43 RequestPriceTask end： 55484247LEN13ina
+01/03/2024 05:00:44 https://drfone.wondershare.com/df-new-year-sale.html
+01/03/2024 05:00:46 Start copy Product
+01/03/2024 05:00:49 copy Product completed, duration:3
+01/03/2024 05:00:49 Start copy resource
+01/03/2024 05:00:50 copy resource completed, duration:1
+01/03/2024 05:00:50 Start dylib
+01/03/2024 05:00:51 copy dylib completed, duration:0
+01/03/2024 05:00:52 [WSID] start IsLogined
+01/03/2024 05:00:52 [WSID] start QueryUserInfo
+01/03/2024 05:00:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:00:52 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:00:52 [WSID] start IsLogined
+01/03/2024 05:00:52 [WSID] start QueryUserInfo
+01/03/2024 05:00:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:00:52 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:00:52 [WSID] start IsLogined
+01/03/2024 05:00:52 [WSID] start QueryUserInfo
+01/03/2024 05:00:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:00:52 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:00:54 AD Popup Success,Time:1/3/2024 5:00:54 AM
+01/03/2024 05:01:44 [WSID] start CheckUserexists
+01/03/2024 05:01:45 [WSID] CheckUserexists completed code=Suceess msg=suceess
+01/03/2024 05:01:51 [WSID] start Login
+01/03/2024 05:01:52 [WSID] Login completed code=KeyCodeError msg=Key code error.
+01/03/2024 05:01:52 [WSID] start QueryUserInfo
+01/03/2024 05:01:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:01:52 [WSID] start QueryUserInfo
+01/03/2024 05:01:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:01:52 [WSID] start QueryUserInfo
+01/03/2024 05:01:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:01:52 [WSID] start QueryUserInfo
+01/03/2024 05:01:52 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:01:52 login failed Key code error., error code =KeyCodeError
+01/03/2024 05:02:23 [WSID] start CheckUserexists
+01/03/2024 05:02:24 [WSID] CheckUserexists completed code=Suceess msg=suceess
+01/03/2024 05:02:33 [WSID] start Login
+01/03/2024 05:02:34 [WSID] Login completed code=KeyCodeError msg=Key code error.
+01/03/2024 05:02:34 [WSID] start QueryUserInfo
+01/03/2024 05:02:34 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:02:34 [WSID] start QueryUserInfo
+01/03/2024 05:02:34 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:02:34 [WSID] start QueryUserInfo
+01/03/2024 05:02:34 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:02:34 [WSID] start QueryUserInfo
+01/03/2024 05:02:34 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:02:34 login failed Key code error., error code =KeyCodeError
+01/03/2024 05:10:54 [WSID] start IsLogined
+01/03/2024 05:10:54 [WSID] start QueryUserInfo
+01/03/2024 05:10:54 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:10:54 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:10:54 [WSID] start IsLogined
+01/03/2024 05:10:54 [WSID] start QueryUserInfo
+01/03/2024 05:10:54 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:10:54 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:10:54 [WSID] start IsLogined
+01/03/2024 05:10:54 [WSID] start QueryUserInfo
+01/03/2024 05:10:54 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:10:54 [WSID] IsLogined completed  islogined = False
+01/03/2024 05:11:04 [WSID] start CheckUserexists
+01/03/2024 05:11:05 [WSID] CheckUserexists completed code=Suceess msg=suceess
+01/03/2024 05:11:11 [WSID] start Login
+01/03/2024 05:11:12 [WSID] Login completed code=KeyCodeError msg=Key code error.
+01/03/2024 05:11:12 [WSID] start QueryUserInfo
+01/03/2024 05:11:12 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:11:12 [WSID] start QueryUserInfo
+01/03/2024 05:11:12 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:11:12 [WSID] start QueryUserInfo
+01/03/2024 05:11:12 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:11:12 [WSID] start QueryUserInfo
+01/03/2024 05:11:12 [WSID] QueryUserInfo completed msg=
+01/03/2024 05:11:12 login failed Key code error., error code =KeyCodeError
+01/03/2024 05:11:20 WifiQRCodePairTask.OnWork port = 11000
+01/03/2024 05:11:20 WifiQRCodePairTask.OnWork Listen over will begin Accept 
+01/03/2024 05:11:20 WifiQRCodePairTask.GetQRCodeBitmap infoJson:{"IPS":[{"Key":302033088,"Value":11000}]}
+01/03/2024 05:11:20 WifiQRCodePairTask.GetQRCodeBitmap allData:https://wondershare.page.link/?link=https%3A%2F%2Fdrfoneair.wondershare.com?code=eyJJUFMiOlt7IktleSI6MzAyMDMzMDg4LCJWYWx1ZSI6MTEwMDB9XX0=&apn=com.wondershare.drfone.link&ibi=com.wondershare.drfonelink&isi=6444004696&efr=1
+01/03/2024 05:11:20 IP info : {"IPS":[{"Key":302033088,"Value":11000}]}

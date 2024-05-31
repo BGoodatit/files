@@ -1,0 +1,36 @@
+2024-04-18T16:12:16,475 Using pip 23.2.1 from /Users/adriot/.config/gcloud/virtenv/lib/python3.11/site-packages/pip (python 3.11)
+2024-04-18T16:12:16,475 Non-user install because user site-packages disabled
+2024-04-18T16:12:16,492 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-9spgv9qc
+2024-04-18T16:12:16,493 Initialized build tracking at /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-9spgv9qc
+2024-04-18T16:12:16,493 Created build tracker: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-9spgv9qc
+2024-04-18T16:12:16,493 Entered build tracker: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-9spgv9qc
+2024-04-18T16:12:16,494 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-install-mppsa9me
+2024-04-18T16:12:16,495 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-ephem-wheel-cache-gaglftq6
+2024-04-18T16:12:16,505 Requirement already satisfied: crcmod in ./.config/gcloud/virtenv/lib/python3.11/site-packages (1.7)
+2024-04-18T16:12:16,505 Requirement already satisfied: grpcio in ./.config/gcloud/virtenv/lib/python3.11/site-packages (1.62.2)
+2024-04-18T16:12:16,505 Requirement already satisfied: pyopenssl==23.2.0 in ./.config/gcloud/virtenv/lib/python3.11/site-packages (23.2.0)
+2024-04-18T16:12:16,506 Requirement already satisfied: google_crc32c in ./.config/gcloud/virtenv/lib/python3.11/site-packages (1.5.0)
+2024-04-18T16:12:16,506 Requirement already satisfied: certifi in ./.config/gcloud/virtenv/lib/python3.11/site-packages (2024.2.2)
+2024-04-18T16:12:16,506 Requirement already satisfied: cryptography in ./.config/gcloud/virtenv/lib/python3.11/site-packages (41.0.7)
+2024-04-18T16:12:16,516 Requirement already satisfied: cffi>=1.12 in ./.config/gcloud/virtenv/lib/python3.11/site-packages (from cryptography) (1.16.0)
+2024-04-18T16:12:16,517 Requirement already satisfied: pycparser in ./.config/gcloud/virtenv/lib/python3.11/site-packages (from cffi>=1.12->cryptography) (2.22)
+2024-04-18T16:12:16,517 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-unpack-cv89uh5o
+2024-04-18T16:12:16,540 Removed build tracker: '/private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-9spgv9qc'
+2024-04-18T18:30:19,054 Using pip 23.2.1 from /Users/adriot/.config/gcloud/virtenv/lib/python3.11/site-packages/pip (python 3.11)
+2024-04-18T18:30:19,055 Non-user install because user site-packages disabled
+2024-04-18T18:30:19,229 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-h06dlc82
+2024-04-18T18:30:19,229 Initialized build tracking at /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-h06dlc82
+2024-04-18T18:30:19,229 Created build tracker: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-h06dlc82
+2024-04-18T18:30:19,229 Entered build tracker: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-h06dlc82
+2024-04-18T18:30:19,229 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-install-7i20ej2u
+2024-04-18T18:30:19,231 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-ephem-wheel-cache-3memgw3m
+2024-04-18T18:30:19,245 Requirement already satisfied: crcmod in ./.config/gcloud/virtenv/lib/python3.11/site-packages (1.7)
+2024-04-18T18:30:19,245 Requirement already satisfied: grpcio in ./.config/gcloud/virtenv/lib/python3.11/site-packages (1.62.2)
+2024-04-18T18:30:19,246 Requirement already satisfied: pyopenssl==23.2.0 in ./.config/gcloud/virtenv/lib/python3.11/site-packages (23.2.0)
+2024-04-18T18:30:19,246 Requirement already satisfied: google_crc32c in ./.config/gcloud/virtenv/lib/python3.11/site-packages (1.5.0)
+2024-04-18T18:30:19,246 Requirement already satisfied: certifi in ./.config/gcloud/virtenv/lib/python3.11/site-packages (2024.2.2)
+2024-04-18T18:30:19,247 Requirement already satisfied: cryptography in ./.config/gcloud/virtenv/lib/python3.11/site-packages (41.0.7)
+2024-04-18T18:30:19,257 Requirement already satisfied: cffi>=1.12 in ./.config/gcloud/virtenv/lib/python3.11/site-packages (from cryptography) (1.16.0)
+2024-04-18T18:30:19,257 Requirement already satisfied: pycparser in ./.config/gcloud/virtenv/lib/python3.11/site-packages (from cffi>=1.12->cryptography) (2.22)
+2024-04-18T18:30:19,258 Created temporary directory: /private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-unpack-s12bag14
+2024-04-18T18:30:19,282 Removed build tracker: '/private/var/folders/hj/qdgq7zld0hsdw67v_c3glnfr0000gn/T/pip-build-tracker-h06dlc82'

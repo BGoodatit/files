@@ -1,0 +1,349 @@
+# ~/.config/starship.toml
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+format = """
+$username\
+$hostname\
+$directory\
+$line_break\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status\
+$line_break\
+$shlvl\
+$kubernetes\
+$docker_context\
+$package\
+$cmake\
+$perl\
+$rust\
+$terraform\
+$vagrant\
+$nix_shell\
+$conda\
+$env_var\
+
+$character"""
+add_newline = true
+command_timeout = 10000
+# Timeout for starship to scan files (in milliseconds)
+scan_timeout = 30
+
+right_format = "$cmd_duration$ruby$python$nodejs$aws"
+
+# User-Host Module
+[username]
+format = "[$user](cyan)@"
+disabled = false
+show_always = true
+
+# Host module
+[hostname]
+format = "[$hostname](blue) "
+ssh_only = false
+disabled = false
+ssh_symbol = " "
+
+# Current Directory
+[directory]
+format = "[$path](bold green) "
+disabled = false
+home_symbol = "~"
+read_only = " 󰌾"
+truncation_length = 10
+truncate_to_repo = true # truncates directory to root folder if in github repo
+
+# Git Branch
+[git_branch]
+format = "[on ]($style)[$branch](bold green) []($style) (bold blue)"
+#symbol = " "
+style = "bold dimmed"
+disabled = false
+
+# Git Status - Display status in words with counts
+[git_status]
+format = "$all_status "
+#style = "bold yellow"
+conflicted = " ($count) conflicts"
+ahead = " ($ahead_count) ahead"
+behind = " ($behind_count) behind"
+untracked = "[$count untracked]( blue)"
+modified = "$count dirty "
+deleted = "$count deleted(red) "
+disabled = false
+
+# Kubernetes context
+[kubernetes]
+format = " [☸ $context ($namespace)](bold magenta) "
+disabled = false
+
+# Command Character (Prompt Indicator)
+[character]
+# Uncomment and edit symbols as desired
+# success_symbol = "[>](green)"
+# error_symbol = "[>](red)"
+disabled = false
+
+# Node.js
+[nodejs]
+# Uncomment and edit format as desired
+# format = "ﬢ[Node.js $version](bold green) "
+ format = "[$symbol](bold green)$version "
+detect_files = ["package.json", ".node-version"]
+detect_folders = ["node_modules"]
+disabled = false
+symbol = " "
+
+# Python environment
+[python]
+symbol = " "
+# format = 'via [$symbol}python ($version} )(\($virtualenv\) )]($style)'
+format = '[($virtualenv)](italic $style) [$symbol](bold green)$version '
+style = "dimmed green"
+pyenv_prefix = "venv "
+python_binary = ["./venv/bin/python", "python", "python3", "python2"]
+detect_extensions = ["py"]
+version_format = "v$raw}"
+detect_files = ["pyproject.toml", "requirements.txt", "Pipfile", "*.py"]
+pyenv_version_name = true
+
+
+# Command Duration
+[cmd_duration]
+min_time = 500
+format = "took [$duration]($style) "
+disabled = false
+
+# Time
+[time]
+disabled = false
+use_12hr = true
+#time_format = "%R"        # Hour:Minute Format
+utc_time_offset = "local"
+time_range = "-"
+
+# Battery
+[battery]
+# Uncomment and edit full symbol as desired
+# full_symbol = "🔋"
+charging_symbol = "󱐌"
+discharging_symbol = "󰁺"
+disabled = false
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+# Ruby
+[ruby]
+disabled = false
+detect_files = ["Gemfile", "*.rb"]
+symbol = " "
+
+# Rust
+[rust]
+disabled = false
+detect_files = ["Cargo.toml"]
+symbol = " "
+
+# AWS
+[aws]
+disabled = false
+symbol = ""
+#detect_files = ["config", "credentials"]
+
+# CMake
+[cmake]
+disabled = false
+detect_files = ["CMakeLists.txt"]
+
+# Docker context
+[docker_context]
+symbol = " "
+disabled = false
+
+# .NET
+[dotnet]
+disabled = false
+detect_files = ["project.json", "*.csproj", "*.fsproj", "*.xproj"]
+
+# Elixir
+[elixir]
+symbol = " "
+disabled = false
+detect_files = ["mix.exs"]
+
+# Elm
+[elm]
+disabled = false
+detect_files = ["elm.json"]
+symbol = " "
+
+# Go
+[golang]
+symbol = " "
+disabled = false
+detect_files = ["go.mod", "*.go"]
+
+# Haskell
+[haskell]
+disabled = false
+detect_files = ["stack.yaml", "*.cabal"]
+symbol = " "
+
+
+# Java
+[java]
+disabled = false
+detect_files = ["pom.xml", "build.gradle", "*.java"]
+symbol = " "
+
+# Julia
+[julia]
+disabled = false
+detect_files = ["Project.toml"]
+symbol = " "
+
+# Kotlin
+[kotlin]
+disabled = false
+detect_files = ["*.kt", "*.kts"]
+symbol = " "
+
+# PHP
+[php]
+disabled = false
+detect_files = ["composer.json", "*.php"]
+symbol = " "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[crystal]
+symbol = " "
+
+[dart]
+symbol = " "
+
+
+[fennel]
+symbol = " "
+
+[fossil_branch]
+symbol = " "
+
+[guix_shell]
+symbol = " "
+
+
+[haxe]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[meson]
+symbol = "󰔷 "
+
+[nim]
+symbol = "󰆥 "
+
+[nix_shell]
+symbol = " "
+[os]
+disabled = false
+
+
+[ocaml]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "
+
+[package]
+symbol = "󰏗 "
+
+[perl]
+symbol = " "
+
+
+[pijul_channel]
+symbol = " "
+
+
+[rlang]
+symbol = "󰟔 "
+
+
+[scala]
+symbol = " "
+
+[swift]
+symbol = " "
+
+[zig]
+symbol = " "
+
+[gcloud]
+format = '[$symbol]($style)([$domain(\($region\))]($style) )'
+symbol = "[󱇶 ]($style)"
+style = "bold yellow"
+
+[custom.metadata]
+symbol = "| "
+disabled = false
+command = 'curl -s -H "Metadata-Flavor: Google" http://metadata/computeMetadata/v1/instance/network-interfaces/0/access-configs/0/external-ip'
+when = true
+format = '[$symbol($output )]($style)'

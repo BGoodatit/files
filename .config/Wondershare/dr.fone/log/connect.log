@@ -1,0 +1,43 @@
+2024-01-03 05:00:42:247 -0 connect: adb path:/Applications/Wondershare Dr.Fone.app/Contents/MacOS/adb
+2024-01-03 05:00:42:248 -0 connect: /Applications/Wondershare Dr.Fone.app/Contents/MacOS/adb not exists
+2024-01-03 05:00:42:248 -0 connect: USBListener begin moniter 
+2024-01-03 05:00:44:150 -0 connect: **********wait runloop stop**********
+2024-01-03 05:00:44:150 -0 connect: **********wait notification thread exit**********
+2024-01-03 05:00:44:150 -0 connect: **********notification thread exit**********
+2024-01-03 05:00:44:388 -0 connect: start notification
+2024-01-03 05:00:44:388 -0 connect: ------------------------------MSG_CONNECTED--------------------------------
+2024-01-03 05:00:44:409 -0 connect: itunes add device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:00:45:132 -0 connect: auto connect udid: 00008120000655383CD0C01E, result=0, description: kAMDSuccess
+2024-01-03 05:05:16:539 -0 connect: ------------------------------MSG_DISCONNECTED--------------------------------
+2024-01-03 05:05:16:539 -0 connect: itunes remove device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:05:54:544 -0 connect: ------------------------------MSG_CONNECTED--------------------------------
+2024-01-03 05:05:54:577 -0 connect: itunes add device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:05:55:302 -0 connect: auto connect udid: 00008120000655383CD0C01E, result=0, description: kAMDSuccess
+2024-01-03 05:07:45:762 -0 connect: ------------------------------MSG_DISCONNECTED--------------------------------
+2024-01-03 05:07:45:763 -0 connect: itunes remove device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:08:49:874 -0 connect: ------------------------------MSG_CONNECTED--------------------------------
+2024-01-03 05:08:49:908 -0 connect: itunes add device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:08:50:687 -0 connect: auto connect udid: 00008120000655383CD0C01E, result=0, description: kAMDSuccess
+2024-01-03 05:11:32:074 -0 connect: ------------------------------MSG_DISCONNECTED--------------------------------
+2024-01-03 05:11:32:074 -0 connect: itunes remove device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:11:45:445 -0 connect: ------------------------------MSG_CONNECTED--------------------------------
+2024-01-03 05:11:45:491 -0 connect: itunes add device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:11:46:434 -0 connect: auto connect udid: 00008120000655383CD0C01E, result=0, description: kAMDSuccess
+2024-01-03 05:12:16:127 -0 connect: ------------------------------MSG_DISCONNECTED--------------------------------
+2024-01-03 05:12:16:128 -0 connect: itunes remove device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:12:40:363 -0 connect: ------------------------------MSG_CONNECTED--------------------------------
+2024-01-03 05:12:40:395 -0 connect: itunes add device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:12:41:136 -0 connect: auto connect udid: 00008120000655383CD0C01E, result=0, description: kAMDSuccess
+2024-01-03 05:19:47:418 -0 connect: ------------------------------MSG_DISCONNECTED--------------------------------
+2024-01-03 05:19:47:419 -0 connect: itunes remove device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:20:15:729 -0 connect: ------------------------------MSG_CONNECTED--------------------------------
+2024-01-03 05:20:15:759 -0 connect: itunes add device：00008120000655383CD0C01E, type: WIFI
+2024-01-03 05:20:16:785 -0 connect: auto connect udid: 00008120000655383CD0C01E, result=0, description: kAMDSuccess
+2024-01-03 05:20:49:869 -0 connect: WIFIListener::handleBonjourDevice 
+2024-01-03 05:20:49:870 -0 connect: BonjourClient::run 
+2024-01-03 05:20:49:870 -0 connect: BonjourClient::run END BonjourClient LOOP
+2024-01-03 05:20:51:900 -0 connect: ~WIFIListener 
+2024-01-03 05:20:51:901 -0 connect: ------------------------------MSG_UNSUBSCRIBED--------------------------------
+2024-01-03 05:20:51:901 -0 connect: ------------------------------MSG_UNSUBSCRIBED--------------------------------
+2024-01-03 05:20:51:902 -0 connect: **********exit notifications**********
+2024-01-03 05:20:51:902 -0 connect: ~USBListener 

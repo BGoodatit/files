@@ -1,0 +1,85 @@
+2024-04-18 18:38:56,218 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-04-18 18:38:56,221 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2024-04-18 18:38:56,222 DEBUG    root            Running [gcloud.services.enable] with arguments: [--project: "ffox-instance", SERVICE:1: "['compute.googleapis.com']"]
+2024-04-18 18:38:56,233 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 18:38:56,785 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/ffox-instance/services/compute.googleapis.com:enable?alt=json HTTP/1.1" 400 None
+2024-04-18 18:38:56,790 DEBUG    root            Chosen display Format:default
+2024-04-18 18:38:56,827 DEBUG    root            Chosen display Format:default
+2024-04-18 18:38:56,828 DEBUG    root            Chosen display Format:default
+2024-04-18 18:38:56,829 DEBUG    root            (gcloud.services.enable) FAILED_PRECONDITION: Billing account for project '491854589001' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: ARqICRMnnw7BX-plyeJNLka-Q_n9DR0EZWFUlSpMO7ESMqEl5lQQJGGrdq7tmW5nivBMmaHCZcz-HIMHYBtbNZXSOBvxcKWK-L53kvqnUUhERM6A
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=390001&project=491854589001&services=compute.googleapis.com&services=compute.googleapis.com&services=compute.googleapis.com
+    type: googleapis.com/billing-enabled
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com/billing-enabled
+  metadata:
+    project: '491854589001'
+    services: compute.googleapis.com,compute.googleapis.com,compute.googleapis.com
+  reason: UREQ_PROJECT_BILLING_NOT_FOUND
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/services/enable.py", line 198, in Run
+    op = serviceusage.EnableApiCall(project, args.service[0])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 666, in EnableApiCall
+    return client.services.Enable(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/serviceusage_v1_client.py", line 263, in Enable
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://serviceusage.googleapis.com/v1/projects/ffox-instance/services/compute.googleapis.com:enable?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 18 Apr 2024 22:38:56 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Billing account for project '491854589001' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.\nHelp Token: ARqICRMnnw7BX-plyeJNLka-Q_n9DR0EZWFUlSpMO7ESMqEl5lQQJGGrdq7tmW5nivBMmaHCZcz-HIMHYBtbNZXSOBvxcKWK-L53kvqnUUhERM6A",
+    "status": "FAILED_PRECONDITION",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+        "violations": [
+          {
+            "type": "googleapis.com/billing-enabled",
+            "subject": "?error_code=390001&project=491854589001&services=compute.googleapis.com&services=compute.googleapis.com&services=compute.googleapis.com"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "UREQ_PROJECT_BILLING_NOT_FOUND",
+        "domain": "serviceusage.googleapis.com/billing-enabled",
+        "metadata": {
+          "project": "491854589001",
+          "services": "compute.googleapis.com,compute.googleapis.com,compute.googleapis.com"
+        }
+      }
+    ]
+  }
+}
+>
+2024-04-18 18:38:56,831 ERROR    root            (gcloud.services.enable) FAILED_PRECONDITION: Billing account for project '491854589001' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: ARqICRMnnw7BX-plyeJNLka-Q_n9DR0EZWFUlSpMO7ESMqEl5lQQJGGrdq7tmW5nivBMmaHCZcz-HIMHYBtbNZXSOBvxcKWK-L53kvqnUUhERM6A
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=390001&project=491854589001&services=compute.googleapis.com&services=compute.googleapis.com&services=compute.googleapis.com
+    type: googleapis.com/billing-enabled
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com/billing-enabled
+  metadata:
+    project: '491854589001'
+    services: compute.googleapis.com,compute.googleapis.com,compute.googleapis.com
+  reason: UREQ_PROJECT_BILLING_NOT_FOUND
+2024-04-18 18:38:56,836 DEBUG    root            Metrics reporting process started...

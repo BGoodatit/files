@@ -1,0 +1,123 @@
+2024-04-18 16:20:58,657 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2024-04-18 16:20:58,658 DEBUG    root            Running [gcloud.init] with arguments: []
+2024-04-18 16:20:58,658 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2024-04-18 16:20:58,658 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2024-04-18 16:20:58,663 INFO     ___FILE_ONLY___ core:
+  account: BriceGoodwin@devore.services
+  disable_usage_reporting: 'False'
+
+2024-04-18 16:20:58,663 INFO     ___FILE_ONLY___ 
+
+2024-04-18 16:21:02,274 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2024-04-18 16:21:02,274 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2024-04-18 16:21:02,274 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2024-04-18 16:21:02,276 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2024-04-18 16:21:02,277 INFO     ___FILE_ONLY___ Checking network connection...
+2024-04-18 16:21:04,167 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2024-04-18 16:21:04,422 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 365
+2024-04-18 16:21:04,512 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 302 0
+2024-04-18 16:21:04,623 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /InteractiveLogin?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&ifkv=ARZ0qKKDokf8in6_ZrWkZYsABucLcGzKZ6FwPnoTQt294AUpwBDoKqdIZ_ycFY7xRNpn-LqmO1VwEA HTTP/1.1" 302 554
+2024-04-18 16:21:04,777 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ARZ0qKJbQ1DYf3T-zOM47Y6As83G1nuY0P709EGFt5UV645zWj0NjJKGa6dPKSN8EMTdnObx3U6mSw&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-401657772%3A1713471664694358 HTTP/1.1" 200 None
+2024-04-18 16:21:04,998 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:21:05,287 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2024-04-18 16:21:05,298 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2024-04-18 16:21:05,528 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2024-04-18 16:21:05,536 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-04-18 16:21:05,706 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 222653
+2024-04-18 16:21:05,948 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2024-04-18 16:21:05,948 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2024-04-18 16:21:25,564 INFO     ___FILE_ONLY___ You are logged in as: [BriceGoodwin@devore.services].
+
+
+2024-04-18 16:21:25,585 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:21:26,020 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2024-04-18 16:21:28,374 INFO     ___FILE_ONLY___ Your current project has been set to: [contact-bfe-1681077439509].
+
+
+2024-04-18 16:21:28,433 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 16:21:28,434 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2024-04-18 16:21:28,445 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2024-04-18 16:21:28,445 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2024-04-18 16:21:28,446 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2024-04-18 16:21:28,657 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 16:21:29,146 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/contact-bfe-1681077439509?alt=json HTTP/1.1" 200 None
+2024-04-18 16:21:29,153 INFO     root            Display disabled.
+2024-04-18 16:21:34,458 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones']
+2024-04-18 16:21:34,462 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones', 'list']
+2024-04-18 16:21:34,464 INFO     root            Executing: [gcloud compute zones list]
+2024-04-18 16:21:34,466 DEBUG    root            Running [gcloud.compute.zones.list] with arguments: [--no-user-output-enabled: "false", --verbosity: "none"]
+2024-04-18 16:21:34,475 INFO     root            Display disabled.
+2024-04-18 16:21:34,478 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 16:21:34,858 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/contact-bfe-1681077439509/zones?alt=json&maxResults=500 HTTP/1.1" 200 None
+2024-04-18 16:22:10,414 INFO     ___FILE_ONLY___ Your project default Compute Engine zone has been set to [us-east1-b].
+You can change it by running [gcloud config set compute/zone NAME].
+
+
+2024-04-18 16:22:10,418 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions']
+2024-04-18 16:22:10,424 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions', 'describe']
+2024-04-18 16:22:10,425 INFO     root            Executing: [gcloud compute regions describe https://www.googleapis.com/compute/v1/projects/contact-bfe-1681077439509/regions/us-east1]
+2024-04-18 16:22:10,425 DEBUG    root            Running [gcloud.compute.regions.describe] with arguments: [--no-user-output-enabled: "false", --verbosity: "none", NAME: "https://www.googleapis.com/compute/v1/projects/contact-bfe-1681077439509/regions/us-east1"]
+2024-04-18 16:22:10,431 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 16:22:11,010 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/contact-bfe-1681077439509/regions/us-east1?alt=json HTTP/1.1" 200 None
+2024-04-18 16:22:11,017 INFO     root            Display disabled.
+2024-04-18 16:22:11,023 INFO     ___FILE_ONLY___ Your project default Compute Engine region has been set to [us-east1].
+You can change it by running [gcloud config set compute/region NAME].
+
+
+2024-04-18 16:22:11,023 DEBUG    root            Executing command: ['/Users/adriot/google-cloud-sdk/bin/gsutil', 'config', '-n', '-o', '/Users/adriot/.boto']
+2024-04-18 16:22:12,155 DEBUG    ___FILE_ONLY___ 
+2024-04-18 16:22:12,155 DEBUG    ___FILE_ONLY___ This command will create a boto config file at /Users/adriot/.boto
+containing your credentials, based on your responses to the following
+questions.
+
+Boto config file "/Users/adriot/.boto" created. If you need to use a
+proxy to access the Internet please see the instructions in that file.
+
+2024-04-18 16:22:12,155 INFO     ___FILE_ONLY___ Created a default .boto configuration file at [/Users/adriot/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+
+2024-04-18 16:22:12,155 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2024-04-18 16:22:12,155 INFO     ___FILE_ONLY___ * Commands that require authentication will use BriceGoodwin@devore.services by default
+
+2024-04-18 16:22:12,155 INFO     ___FILE_ONLY___ * Commands will reference project `contact-bfe-1681077439509` by default
+
+2024-04-18 16:22:12,155 INFO     ___FILE_ONLY___ * Compute Engine commands will use region `us-east1` by default
+
+2024-04-18 16:22:12,155 INFO     ___FILE_ONLY___ * Compute Engine commands will use zone `us-east1-b` by default
+
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+
+2024-04-18 16:22:12,156 INFO     ___FILE_ONLY___ * Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+
+2024-04-18 16:22:12,156 DEBUG    root            Chosen display Format:default
+2024-04-18 16:22:12,156 INFO     root            Display format: "default"
+2024-04-18 16:22:12,162 DEBUG    root            Metrics reporting process started...

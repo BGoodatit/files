@@ -1,0 +1,115 @@
+2024-04-18 16:26:12,640 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 16:26:12,641 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-04-18 16:26:12,670 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'import']
+2024-04-18 16:26:12,707 DEBUG    root            Running [gcloud.compute.instances.import] with arguments: [--source-uri: "gs://my_bucket/ffox.ova", INSTANCE_NAME: "ffox-instance"]
+2024-04-18 16:26:12,715 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 16:26:13,074 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/contact-bfe-1681077439509/zones/us-east1-b/instances/ffox-instance?alt=json HTTP/1.1" 404 None
+2024-04-18 16:26:13,078 WARNING  root            Importing OVF. This may take 40 minutes for smaller OVFs and up to a couple of hours for larger OVFs.
+2024-04-18 16:26:13,096 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:13,516 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/contact-bfe-1681077439509?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:13,588 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:14,361 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/contact-bfe-1681077439509/services/cloudbuild.googleapis.com?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:17,005 INFO     ___FILE_ONLY___ Enabling service [cloudbuild.googleapis.com] on project [contact-bfe-1681077439509]...
+
+2024-04-18 16:26:17,017 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:17,845 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509/services/cloudbuild.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:17,861 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:18,316 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-727386387529-ddbcaee6-6900-4137-9b1e-791243f980b5?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:20,379 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:20,883 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-727386387529-ddbcaee6-6900-4137-9b1e-791243f980b5?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:23,159 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:23,556 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-727386387529-ddbcaee6-6900-4137-9b1e-791243f980b5?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:23,565 INFO     ___FILE_ONLY___ Operation "operations/acf.p2-727386387529-ddbcaee6-6900-4137-9b1e-791243f980b5" finished successfully.
+
+2024-04-18 16:26:23,576 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:24,294 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/contact-bfe-1681077439509/services/logging.googleapis.com?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:24,323 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 16:26:25,038 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/contact-bfe-1681077439509/services/compute.googleapis.com?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:25,298 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:25,865 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:25,950 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-04-18 16:26:26,498 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/roles/cloudbuild.builds.builder?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:26,515 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-04-18 16:26:27,088 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/roles/compute.admin?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:27,106 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-04-18 16:26:27,596 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/roles/iam.serviceAccountTokenCreator?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:27,616 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-04-18 16:26:28,238 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/roles/iam.serviceAccountUser?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:28,256 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-04-18 16:26:28,842 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/roles/cloudbuild.builds.builder?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:31,720 INFO     root            Adding [serviceAccount:727386387529@cloudbuild.gserviceaccount.com] to [roles/compute.admin]
+2024-04-18 16:26:31,733 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:32,127 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:32,147 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:32,702 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:setIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:32,706 INFO     root            Adding [serviceAccount:727386387529@cloudbuild.gserviceaccount.com] to [roles/iam.serviceAccountTokenCreator]
+2024-04-18 16:26:32,714 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:33,152 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:33,171 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:33,788 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:setIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:33,797 INFO     root            Adding [serviceAccount:727386387529@cloudbuild.gserviceaccount.com] to [roles/iam.serviceAccountUser]
+2024-04-18 16:26:33,810 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:34,316 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:34,332 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:26:35,022 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509:setIamPolicy?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:35,111 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-04-18 16:26:35,581 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "GET /v1/projects/compute-image-import/locations/us-east1/repositories/wrappers?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:35,596 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): artifactregistry.googleapis.com:443
+2024-04-18 16:26:36,028 DEBUG    urllib3.connectionpool https://artifactregistry.googleapis.com:443 "GET /v1/projects/compute-image-import/locations/us-east1/repositories/wrappers/packages/gce_ovf_import?alt=json HTTP/1.1" 200 None
+2024-04-18 16:26:36,057 DEBUG    root            submitting build: <Build
+ images: []
+ secrets: []
+ steps: [<BuildStep
+ allowExitCodes: []
+ args: ['-client-id=gcloud', '-client-version=472.0.0', '-instance-names=ffox-instance', '-ovf-gcs-path=gs://my_bucket/ffox.ova', '-release-track=ga', '-timeout=6984s', '-zone=us-east1-b']
+ env: []
+ name: 'us-east1-docker.pkg.dev/compute-image-import/wrappers/gce_ovf_import:release'
+ secretEnv: []
+ volumes: []
+ waitFor: []>]
+ tags: ['gce-daisy', 'gce-ovf-import']
+ timeout: '7200s'
+ warnings: []>
+2024-04-18 16:26:36,139 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-04-18 16:26:39,281 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "POST /v1/projects/contact-bfe-1681077439509/locations/us-east1/builds?alt=json&projectId=contact-bfe-1681077439509 HTTP/1.1" 400 None
+2024-04-18 16:26:39,286 DEBUG    root            (gcloud.compute.instances.import) FAILED_PRECONDITION: failed precondition: due to quota restrictions, cannot run builds in this region, see https://cloud.google.com/build/docs/locations#restricted_regions_for_some_projects
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 193, in Run
+    return daisy_utils.RunInstanceOVFImportBuild(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/daisy_utils.py", line 1461, in RunInstanceOVFImportBuild
+    return _RunCloudBuild(
+           ^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/daisy_utils.py", line 1280, in _RunCloudBuild
+    build, build_ref = _CreateRegionalCloudBuild(build_config, client, messages,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/daisy_utils.py", line 618, in _CreateRegionalCloudBuild
+    op = client.projects_locations_builds.Create(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudbuild/v1/cloudbuild_v1_client.py", line 1310, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://cloudbuild.googleapis.com/v1/projects/contact-bfe-1681077439509/locations/us-east1/builds?alt=json&projectId=contact-bfe-1681077439509>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 18 Apr 2024 20:26:39 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "failed precondition: due to quota restrictions, cannot run builds in this region, see https://cloud.google.com/build/docs/locations#restricted_regions_for_some_projects",
+    "status": "FAILED_PRECONDITION"
+  }
+}
+>
+2024-04-18 16:26:39,289 ERROR    root            (gcloud.compute.instances.import) FAILED_PRECONDITION: failed precondition: due to quota restrictions, cannot run builds in this region, see https://cloud.google.com/build/docs/locations#restricted_regions_for_some_projects
+2024-04-18 16:26:39,308 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,37 @@
+01/03/2024 05:11:28 Program.Start Product=dr.fone, Version=13.5.3.1152
+01/03/2024 05:11:28 Operating System:  Unix 23.2.0.0
+01/03/2024 05:11:28 Friendly Version:  MaxOSX OS64Bits
+01/03/2024 05:11:28 Language:  English (United States)
+01/03/2024 05:11:28 ProcessorCount:  16
+01/03/2024 05:11:28 iTunesVersion: 0.0
+01/03/2024 05:11:28 /Users/.Android
+01/03/2024 05:11:29 start CreateClientSign
+01/03/2024 05:11:29 CreateClientSign retcode=0 value={67F7F985-0887-506A-A4A1-C423694955C6}
+01/03/2024 05:11:29 current langid = 3361
+01/03/2024 05:11:29 RequestPriceTask begin.
+01/03/2024 05:11:29 RequestPriceTask begin.
+01/03/2024 05:11:29 RequestPriceTask begin.
+01/03/2024 05:11:29 RequestPriceTask begin.
+01/03/2024 05:11:29 RequestPriceTask begin.
+01/03/2024 05:11:29 <USB DEBUG> start requesting...
+01/03/2024 05:11:29 start CreateClientSign
+01/03/2024 05:11:29 CreateClientSign retcode=0 value={67F7F985-0887-506A-A4A1-C423694955C6}
+01/03/2024 05:11:30 [WSID] start Init
+01/03/2024 05:11:30 [WSID] Init completed code=Suceess
+01/03/2024 05:11:30 Appkey=d62cbadebedf8433bcc9f8ae6d3e17ad, AppSecret=9249c44f8f3b5af3a95183b50631349d
+01/03/2024 05:11:30 start CreateClientSign
+01/03/2024 05:11:30 CreateClientSign retcode=0 value={67F7F985-0887-506A-A4A1-C423694955C6}
+01/03/2024 05:11:30 ClentSign={67F7F985-0887-506A-A4A1-C423694955C6}
+01/03/2024 05:11:30 Program.InitRegisterModule
+01/03/2024 05:11:31 <USB DEBUG> start parsing json...
+01/03/2024 05:11:31 <USB DEBUG> value compare: 1-1
+01/03/2024 05:11:31 <CloudUpdateHelper> get the result of update WA/WB Apk, start...
+01/03/2024 05:11:31 <CloudUpdateHelper> start get wa apk updateInfo.
+01/03/2024 05:11:31 <AAPT> 1 aapt apk version start. apkPath: /Users/adriot/Library/Application Support/SubDrFoneApps/dr.fone-Recover.app/Contents/MonoBundle/WhatsApp_Specified.apk
+01/03/2024 05:11:31 RegisterUSBDevicesNotify handle:140469817497600
+01/03/2024 05:11:31 MacUsbNotifier  StartMonitor start
+01/03/2024 05:11:31 MacUsbNotifier  StopMonitor
+01/03/2024 05:11:31 MacOS  StartMonitorWorker start
+01/03/2024 05:11:31 MacUsbNotifier  DoListen start
+01/03/2024 05:11:31 MacUsb DeviceConnectCallback 
+01/03/2024 05:11:31 MacUsb DeviceDisconnectCallback 

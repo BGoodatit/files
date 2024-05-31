@@ -1,0 +1,183 @@
+2024-04-18 18:30:31,022 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2024-04-18 18:30:31,023 DEBUG    root            Running [gcloud.init] with arguments: []
+2024-04-18 18:30:31,023 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2024-04-18 18:30:31,023 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2024-04-18 18:30:31,025 INFO     ___FILE_ONLY___ compute:
+  region: us-east1
+  zone: us-east1-b
+core:
+  account: BriceGoodwin@devore.services
+  disable_usage_reporting: 'False'
+  project: contact-bfe-1681077439509
+
+2024-04-18 18:30:31,025 INFO     ___FILE_ONLY___ 
+
+2024-04-18 18:32:21,313 INFO     ___FILE_ONLY___ Your current configuration has been set to: [ffox-instance]
+
+
+2024-04-18 18:32:21,314 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2024-04-18 18:32:21,314 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2024-04-18 18:32:21,315 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2024-04-18 18:32:21,315 INFO     ___FILE_ONLY___ Checking network connection...
+2024-04-18 18:32:22,960 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2024-04-18 18:32:23,158 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 365
+2024-04-18 18:32:23,259 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 302 0
+2024-04-18 18:32:23,360 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /InteractiveLogin?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&ifkv=ARZ0qKKLA25BpkUlnc5gnWnW2cemzXT2dkHlL1q9IV-wUNp_aw_lAiys5hz_5QuKMZ5oBzw-vuxL HTTP/1.1" 302 554
+2024-04-18 18:32:23,549 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ARZ0qKKp1sxNMpF8dYEjq25COGYCwUoZeJKr71sNwKO06Isra-S62G_iZ0cuLY9jLTamc5bEsA5t6g&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1677783202%3A1713479543353421 HTTP/1.1" 200 None
+2024-04-18 18:32:23,641 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 18:32:23,925 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2024-04-18 18:32:23,935 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2024-04-18 18:32:24,099 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2024-04-18 18:32:24,104 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-04-18 18:32:24,302 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 222653
+2024-04-18 18:32:24,583 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2024-04-18 18:32:24,583 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2024-04-18 18:32:34,584 INFO     ___FILE_ONLY___ You are logged in as: [BriceGoodwin@devore.services].
+
+
+2024-04-18 18:32:34,596 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-04-18 18:32:34,658 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-04-18 18:32:34,967 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-04-18 18:32:34,978 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 18:32:35,366 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2024-04-18 18:32:57,723 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 18:32:58,207 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects?alt=json HTTP/1.1" 200 None
+2024-04-18 18:32:58,211 INFO     ___FILE_ONLY___ Waiting for [operations/cp.6129388501588176588] to finish...
+2024-04-18 18:32:59,228 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 18:32:59,875 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/operations/cp.6129388501588176588?alt=json HTTP/1.1" 200 None
+2024-04-18 18:33:02,759 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 18:33:03,426 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/operations/cp.6129388501588176588?alt=json HTTP/1.1" 200 None
+2024-04-18 18:33:03,433 INFO     ___FILE_ONLY___ Your current project has been set to: [ffox-instance].
+
+
+2024-04-18 18:33:03,459 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 18:33:03,460 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2024-04-18 18:33:03,465 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2024-04-18 18:33:03,465 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2024-04-18 18:33:03,466 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2024-04-18 18:33:03,570 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 18:33:04,111 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/ffox-instance?alt=json HTTP/1.1" 403 None
+2024-04-18 18:33:04,115 DEBUG    root            Chosen display Format:default
+2024-04-18 18:33:04,154 DEBUG    root            Chosen display Format:default
+2024-04-18 18:33:04,155 DEBUG    root            Chosen display Format:default
+2024-04-18 18:33:04,157 DEBUG    root            Chosen display Format:default
+2024-04-18 18:33:04,156 DEBUG    root            (gcloud.compute.project-info.describe) User [BriceGoodwin@devore.services] does not have permission to access projects instance [ffox-instance] (or it may not exist): Compute Engine API has not been used in project ffox-instance before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=ffox-instance then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=ffox-instance
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/ffox-instance
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/project_info/describe.py", line 37, in Run
+    return client.MakeRequests([(client.apitools_client.projects, 'Get',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 128, in MakeRequests
+    objects = list(
+              ^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 321, in MakeRequests
+    responses, new_errors = single_request_helper.MakeSingleRequest(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/single_request_helper.py", line 69, in MakeSingleRequest
+    response = getattr(service, method)(request=request_body)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 10778, in Get
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 243, in _CheckResponse
+    _CheckForApiEnablementError(response_as_error)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 209, in _CheckForApiEnablementError
+    PromptToEnableApi(*enablement_info)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 192, in PromptToEnableApi
+    raise exception
+googlecloudsdk.api_lib.util.exceptions.HttpException: User [BriceGoodwin@devore.services] does not have permission to access projects instance [ffox-instance] (or it may not exist): Compute Engine API has not been used in project ffox-instance before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=ffox-instance then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=ffox-instance
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/ffox-instance
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+2024-04-18 18:33:04,159 ERROR    root            (gcloud.compute.project-info.describe) User [BriceGoodwin@devore.services] does not have permission to access projects instance [ffox-instance] (or it may not exist): Compute Engine API has not been used in project ffox-instance before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=ffox-instance then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=ffox-instance
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/ffox-instance
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+2024-04-18 18:33:04,159 DEBUG    root            Chosen display Format:default
+2024-04-18 18:33:04,162 INFO     root            [compute project-info describe --quiet] has failed
+
+2024-04-18 18:33:04,162 INFO     ___FILE_ONLY___ Not setting default zone/region (this feature makes it easier to use
+[gcloud compute] by setting an appropriate default value for the
+--zone and --region flag).
+See https://cloud.google.com/compute/docs/gcloud-compute section on how to set
+default compute region and zone manually. If you would like [gcloud init] to be
+able to do this for you the next time you run it, make sure the
+Compute Engine API is enabled for your project on the
+https://console.developers.google.com/apis page.
+
+
+2024-04-18 18:33:04,163 DEBUG    root            Not configuring default .boto file. File already exists at [/Users/adriot/.boto].
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ * Commands that require authentication will use BriceGoodwin@devore.services by default
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ * Commands will reference project `ffox-instance` by default
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ This gcloud configuration is called [ffox-instance]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+
+2024-04-18 18:33:04,163 INFO     ___FILE_ONLY___ * Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+
+2024-04-18 18:33:04,163 DEBUG    root            Chosen display Format:default
+2024-04-18 18:33:04,163 INFO     root            Display format: "default"
+2024-04-18 18:33:04,167 DEBUG    root            Metrics reporting process started...

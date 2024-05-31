@@ -1,0 +1,8 @@
+[core]
+account = BriceGoodwin@devore.services
+project = contact-bfe-1681077439509
+
+[compute]
+zone = us-east1-b
+region = us-east1
+

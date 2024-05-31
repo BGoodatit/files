@@ -1,0 +1,42 @@
+2024-04-18 23:21:10,583 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 23:21:10,584 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2024-04-18 23:21:10,587 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'create']
+2024-04-18 23:21:10,631 DEBUG    root            Running [gcloud.compute.images.create] with arguments: [--source-uri: "gs://ffox-instance/FFox-disk1.vmdk", IMAGE_NAME: "FFox-image"]
+2024-04-18 23:21:10,643 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 23:21:10,844 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/ffox-instance/global/images?alt=json HTTP/1.1" 403 None
+2024-04-18 23:21:13,030 INFO     ___FILE_ONLY___ Enabling service [compute.googleapis.com] on project [ffox-instance]...
+
+2024-04-18 23:21:13,045 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 23:21:13,525 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/ffox-instance/services/compute.googleapis.com:enable?alt=json HTTP/1.1" 400 None
+2024-04-18 23:21:13,532 DEBUG    root            Chosen display Format:list[title="Could not fetch resource:",always-display-title]
+2024-04-18 23:21:13,533 DEBUG    root            (gcloud.compute.images.create) Could not fetch resource:
+ - Billing account for project '491854589001' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: ARqICROJEAZJmAoDMyKJg3YhtbamuVPELcSODb6EcSV3eP5GSOsI0MVg-5Gqw3SOwUoaOV47ZaPkJYTmjj1zjFTGxMNbZ7p52a8ZTxeZ9bMW0CCC
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/images/create.py", line 150, in Run
+    return self._Run(args)
+           ^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/images/create.py", line 297, in _Run
+    return client.MakeRequests([(client.apitools_client.images, 'Insert',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 145, in MakeRequests
+    utils.RaiseToolException(
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 139, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 148, in RaiseException
+    raise exception(
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - Billing account for project '491854589001' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: ARqICROJEAZJmAoDMyKJg3YhtbamuVPELcSODb6EcSV3eP5GSOsI0MVg-5Gqw3SOwUoaOV47ZaPkJYTmjj1zjFTGxMNbZ7p52a8ZTxeZ9bMW0CCC
+
+2024-04-18 23:21:13,535 ERROR    root            (gcloud.compute.images.create) Could not fetch resource:
+ - Billing account for project '491854589001' is not found. Billing must be enabled for activation of service(s) 'compute.googleapis.com,compute.googleapis.com,compute.googleapis.com' to proceed.
+Help Token: ARqICROJEAZJmAoDMyKJg3YhtbamuVPELcSODb6EcSV3eP5GSOsI0MVg-5Gqw3SOwUoaOV47ZaPkJYTmjj1zjFTGxMNbZ7p52a8ZTxeZ9bMW0CCC
+
+2024-04-18 23:21:13,546 DEBUG    root            Metrics reporting process started...

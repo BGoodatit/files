@@ -1,0 +1,86 @@
+2024-04-18 23:41:20,920 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 23:41:20,921 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-04-18 23:41:21,001 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'create']
+2024-04-18 23:41:21,056 DEBUG    root            Running [gcloud.compute.instances.create] with arguments: [--image: "ffox-disk", --machine-type: "e2-standard-4", --zone: "us-east1-b", INSTANCE_NAMES:1: "['ffox']"]
+2024-04-18 23:41:21,196 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 23:41:21,468 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/ffox-instance/zones/us-east1-b?alt=json HTTP/1.1" 403 None
+2024-04-18 23:41:23,412 INFO     ___FILE_ONLY___ Enabling service [compute.googleapis.com] on project [ffox-instance]...
+
+2024-04-18 23:41:23,428 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-18 23:41:24,063 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/ffox-instance/services/compute.googleapis.com:enable?alt=json HTTP/1.1" 400 None
+2024-04-18 23:41:24,073 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 23:41:24,543 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/ffox-instance?alt=json HTTP/1.1" 403 None
+2024-04-18 23:41:24,550 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 23:41:24,850 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/ffox-instance?alt=json HTTP/1.1" 403 None
+2024-04-18 23:41:24,855 DEBUG    root            (gcloud.compute.instances.create) Retry
+This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/single_request_helper.py", line 69, in MakeSingleRequest
+    response = getattr(service, method)(request=request_body)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 10778, in Get
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 243, in _CheckResponse
+    _CheckForApiEnablementError(response_as_error)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 207, in _CheckForApiEnablementError
+    raise apitools_exceptions.RequestError('Retry')
+apitools.base.py.exceptions.RequestError: Retry
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/create.py", line 706, in Run
+    requests = self._CreateRequests(args, instance_refs,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/create.py", line 449, in _CreateRequests
+    project_to_sa = create_utils.GetProjectToServiceAccountMap(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/instances/create/utils.py", line 1043, in GetProjectToServiceAccountMap
+    project_to_sa[instance_ref.project] = GetProjectServiceAccount(
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/instances/create/utils.py", line 1065, in GetProjectServiceAccount
+    result = client.MakeRequests([request], errors)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 128, in MakeRequests
+    objects = list(
+              ^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 321, in MakeRequests
+    responses, new_errors = single_request_helper.MakeSingleRequest(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/single_request_helper.py", line 81, in MakeSingleRequest
+    response = getattr(service, method)(request=request_body)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 10778, in Get
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 243, in _CheckResponse
+    _CheckForApiEnablementError(response_as_error)
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 207, in _CheckForApiEnablementError
+    raise apitools_exceptions.RequestError('Retry')
+apitools.base.py.exceptions.RequestError: Retry
+2024-04-18 23:41:24,863 ERROR    root            (gcloud.compute.instances.create) Retry
+This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.
+2024-04-18 23:41:24,872 DEBUG    root            Metrics reporting process started...

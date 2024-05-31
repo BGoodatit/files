@@ -1,0 +1,54 @@
+2024-04-18 18:35:52,590 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 18:35:52,592 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-04-18 18:35:52,633 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'import']
+2024-04-18 18:35:52,672 DEBUG    root            Running [gcloud.compute.instances.import] with arguments: [--source-uri: "gs:/Users/adriot/virtual-machines.localized/ffox.ova", INSTANCE_NAME: "ffox-instance"]
+2024-04-18 18:35:52,677 DEBUG    root            (gcloud.compute.instances.import) The required property [zone] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--zone] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set compute/zone VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_COMPUTE_ZONE]
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 161, in Run
+    self._ValidateArgs(args, compute_client)
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 149, in _ValidateArgs
+    self._CheckForExistingInstances(args.instance_name, compute_client)
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 133, in _CheckForExistingInstances
+    zone = properties.VALUES.compute.zone.GetOrFail()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3964, in GetOrFail
+    return self.Get(required=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3980, in Get
+    property_value = self.GetPropertyValue(required, validate)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3999, in GetPropertyValue
+    property_value = _GetProperty(self,
+                     ^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 4332, in _GetProperty
+    raise RequiredPropertyError(prop, flag=flag_to_use)
+googlecloudsdk.core.properties.RequiredPropertyError: The required property [zone] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--zone] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set compute/zone VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_COMPUTE_ZONE]
+2024-04-18 18:35:52,678 ERROR    root            (gcloud.compute.instances.import) The required property [zone] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--zone] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set compute/zone VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_COMPUTE_ZONE]
+2024-04-18 18:35:52,684 DEBUG    root            Metrics reporting process started...

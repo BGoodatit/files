@@ -1,0 +1,133 @@
+2024-04-19 01:09:29,375 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-19 01:09:29,377 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'os_login']
+2024-04-19 01:09:29,377 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'os-login', 'ssh_keys']
+2024-04-19 01:09:29,379 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'os-login', 'ssh-keys', 'add']
+2024-04-19 01:09:29,379 DEBUG    root            Running [gcloud.compute.os-login.ssh-keys.add] with arguments: [--key-file: "/Users/adriot/.ssh/my-google-cloud-key.pub", --project: "ffox-instance", --ttl: "2592000"]
+2024-04-19 01:09:29,436 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oslogin.googleapis.com:443
+2024-04-19 01:09:29,743 DEBUG    urllib3.connectionpool https://oslogin.googleapis.com:443 "POST /v1/users/BriceGoodwin@devore.services:importSshPublicKey?alt=json&projectId=ffox-instance HTTP/1.1" 403 None
+2024-04-19 01:09:36,084 INFO     ___FILE_ONLY___ Enabling service [oslogin.googleapis.com] on project [ffox-instance]...
+
+2024-04-19 01:09:36,162 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-19 01:09:36,975 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/ffox-instance/services/oslogin.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-04-19 01:09:36,990 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-19 01:09:37,524 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acat.p2-491854589001-d53a8911-05aa-4e83-a5a7-f37c74962520?alt=json HTTP/1.1" 200 None
+2024-04-19 01:09:39,692 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-04-19 01:09:40,187 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acat.p2-491854589001-d53a8911-05aa-4e83-a5a7-f37c74962520?alt=json HTTP/1.1" 200 None
+2024-04-19 01:09:40,193 INFO     ___FILE_ONLY___ Operation "operations/acat.p2-491854589001-d53a8911-05aa-4e83-a5a7-f37c74962520" finished successfully.
+
+2024-04-19 01:09:40,193 DEBUG    root            Request returned no response, retrying
+2024-04-19 01:09:40,193 DEBUG    root            Retrying request to url https://oslogin.googleapis.com/v1/users/BriceGoodwin@devore.services:importSshPublicKey?alt=json&projectId=ffox-instance after exception Retry
+2024-04-19 01:09:42,133 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oslogin.googleapis.com:443
+2024-04-19 01:09:42,312 DEBUG    urllib3.connectionpool https://oslogin.googleapis.com:443 "POST /v1/users/BriceGoodwin@devore.services:importSshPublicKey?alt=json&projectId=ffox-instance HTTP/1.1" 403 None
+2024-04-19 01:09:42,321 DEBUG    root            Request returned no response, retrying
+2024-04-19 01:09:42,321 DEBUG    root            Retrying request to url https://oslogin.googleapis.com/v1/users/BriceGoodwin@devore.services:importSshPublicKey?alt=json&projectId=ffox-instance after exception Retry
+2024-04-19 01:09:46,293 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oslogin.googleapis.com:443
+2024-04-19 01:09:47,456 DEBUG    urllib3.connectionpool https://oslogin.googleapis.com:443 "POST /v1/users/BriceGoodwin@devore.services:importSshPublicKey?alt=json&projectId=ffox-instance HTTP/1.1" 200 None
+2024-04-19 01:09:47,463 DEBUG    root            Chosen display Format:default
+2024-04-19 01:09:47,464 INFO     root            Display format: "default"
+2024-04-19 01:09:47,489 INFO     ___FILE_ONLY___ loginProfile
+2024-04-19 01:09:47,489 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,489 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,489 INFO     ___FILE_ONLY___   
+2024-04-19 01:09:47,489 INFO     ___FILE_ONLY___ name
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___  '
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 117651374575945142630
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ '
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___   
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ posixAccounts
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___   
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ -
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ gid
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___  '
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 969144628
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ '
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ homeDirectory
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ /home/bricegoodwin_devore_services
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ operatingSystemType
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ LINUX
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,490 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ primary
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ true
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ uid
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___  '
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ 969144628
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ '
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ username
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ bricegoodwin_devore_services
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___   
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ sshPublicKeys
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,491 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 24092492a6f1a86941f48e7cb854ec76453beff1d21ca69f032b947a1650bc0d
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___       
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ expirationTimeUsec
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___  '
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 1716095369384799
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ '
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___       
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ fingerprint
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 24092492a6f1a86941f48e7cb854ec76453beff1d21ca69f032b947a1650bc0d
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___       
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ key
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___  |
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___         
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGvbJWDSCI3lFgHhke0PZJa/sO1FQ9LA3/6xkUErw78/dhluXboyzLk+1BfYUR6fwFZXbqoQ6j6Ao9L5f3qYUtqJT2Afpf75MOQckvuzgQX34lBru6w+hlwcnBaylSurc8SWK97A5MJ6AEfK9duIH3PsFi0+0cu1zWHee9ogfFM7XBEi3i4Snrikcc5rXOHvaQHmTpWRjOH6ZnyLdfLhOjonvaV3zc/RbxjFlBN2rZVddL7cPgqnZHciprTiuqFzoFRMZTBZsbxXBgxGuitVfdRYG04LBFCmzvHLRb8NqGHCSuTEjFDtRSvGibeoFgf2lY1pwSqpzcPIMsEf8aK9Er adriot@Bgood
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___       
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ name
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___ :
+2024-04-19 01:09:47,492 INFO     ___FILE_ONLY___  
+2024-04-19 01:09:47,493 INFO     ___FILE_ONLY___ users/BriceGoodwin@devore.services/sshPublicKeys/24092492a6f1a86941f48e7cb854ec76453beff1d21ca69f032b947a1650bc0d
+2024-04-19 01:09:47,493 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:47,497 DEBUG    root            Metrics reporting process started...

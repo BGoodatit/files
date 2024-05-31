@@ -1,0 +1,45 @@
+2024-04-19 01:09:06,402 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-04-19 01:09:06,406 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2024-04-19 01:09:06,407 DEBUG    root            Running [gcloud.projects.list] with arguments: []
+2024-04-19 01:09:06,407 INFO     root            client_filter="None" server_filter="None"
+2024-04-19 01:09:06,420 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-04-19 01:09:06,475 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-04-19 01:09:06,720 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-04-19 01:09:06,731 DEBUG    root            Chosen display Format:
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+
+2024-04-19 01:09:06,732 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+"
+2024-04-19 01:09:06,768 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-19 01:09:07,246 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2024-04-19 01:09:07,294 INFO     ___FILE_ONLY___ PROJECT_ID
+2024-04-19 01:09:07,294 INFO     ___FILE_ONLY___                  
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ NAME
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___            
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ PROJECT_NUMBER
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ contact-bfe-1681077439509
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___   
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ Contact BFE
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___     
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ 727386387529
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ ffox-instance
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___               
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ ffox-instance
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___   
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ 491854589001
+2024-04-19 01:09:07,295 INFO     ___FILE_ONLY___ 
+
+2024-04-19 01:09:07,300 DEBUG    root            Metrics reporting process started...

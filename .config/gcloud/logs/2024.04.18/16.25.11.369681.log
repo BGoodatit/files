@@ -1,0 +1,36 @@
+2024-04-18 16:25:11,379 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 16:25:11,380 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-04-18 16:25:11,412 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'import']
+2024-04-18 16:25:11,450 DEBUG    root            Running [gcloud.compute.instances.import] with arguments: [--source-uri: "gs:/Users/adriot/virtual-machines.localized/ffox.ova", INSTANCE_NAME: "ffox-instance"]
+2024-04-18 16:25:11,459 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2024-04-18 16:25:11,907 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/contact-bfe-1681077439509/zones/us-east1-b/instances/ffox-instance?alt=json HTTP/1.1" 404 None
+2024-04-18 16:25:11,915 WARNING  root            Importing OVF. This may take 40 minutes for smaller OVFs and up to a couple of hours for larger OVFs.
+2024-04-18 16:25:11,915 DEBUG    root            (gcloud.compute.instances.import) Invalid value for [source-uri]: must be a path to an object or a directory in Cloud Storage
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 176, in Run
+    source_uri = daisy_utils.MakeGcsUri(args.source_uri)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/daisy_utils.py", line 2003, in MakeGcsUri
+    obj_ref = resources.REGISTRY.Parse(uri)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/core/resources.py", line 1206, in Parse
+    return self.ParseResourceId(collection, line, params or {},
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/core/resources.py", line 956, in ParseResourceId
+    raise UnknownCollectionException(resource_id)
+googlecloudsdk.core.resources.UnknownCollectionException: unknown collection for [gs:/Users/adriot/virtual-machines.localized/ffox.ova]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 178, in Run
+    raise exceptions.InvalidArgumentException(
+googlecloudsdk.calliope.exceptions.InvalidArgumentException: Invalid value for [source-uri]: must be a path to an object or a directory in Cloud Storage
+2024-04-18 16:25:11,918 ERROR    root            (gcloud.compute.instances.import) Invalid value for [source-uri]: must be a path to an object or a directory in Cloud Storage
+2024-04-18 16:25:11,930 DEBUG    root            Metrics reporting process started...

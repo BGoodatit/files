@@ -1,0 +1,5 @@
+package https://github.com/jhillyerd/plugin-git
+package https://github.com/oh-my-fish/theme-chain
+package vcs
+theme default
+theme chain

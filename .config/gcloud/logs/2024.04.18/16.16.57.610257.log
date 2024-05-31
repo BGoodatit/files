@@ -1,0 +1,81 @@
+2024-04-18 16:16:57,631 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2024-04-18 16:16:57,632 DEBUG    root            Running [gcloud.init] with arguments: []
+2024-04-18 16:16:57,632 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2024-04-18 16:16:57,633 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2024-04-18 16:16:57,634 INFO     ___FILE_ONLY___ core:
+  account: BriceGoodwin@devore.services
+  disable_usage_reporting: 'False'
+
+2024-04-18 16:16:57,634 INFO     ___FILE_ONLY___ 
+
+2024-04-18 16:17:07,721 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2024-04-18 16:17:07,721 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2024-04-18 16:17:07,721 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2024-04-18 16:17:07,722 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2024-04-18 16:17:07,723 INFO     ___FILE_ONLY___ Checking network connection...
+2024-04-18 16:17:09,234 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2024-04-18 16:17:09,407 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 365
+2024-04-18 16:17:09,475 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 302 0
+2024-04-18 16:17:09,579 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /InteractiveLogin?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&ifkv=ARZ0qKJDbUxeP1dnnzPJepldAgKUldgvAMXCUJ8Zx7zkzlx9rb5tG8yUzrUJ1cyHDjO-nB2N3ar80w HTTP/1.1" 302 554
+2024-04-18 16:17:09,741 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=ARZ0qKJLWG-s9FU_6gP4ljcmZrAJQO739tSQudhclJ5xYJFjxhHB1Ppwf4k8ydZShLvwjZHMck2DQA&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1023581008%3A1713471429669318 HTTP/1.1" 200 None
+2024-04-18 16:17:09,851 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:17:10,123 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2024-04-18 16:17:10,134 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2024-04-18 16:17:10,339 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2024-04-18 16:17:10,354 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-04-18 16:17:10,543 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 222653
+2024-04-18 16:17:10,777 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2024-04-18 16:17:10,777 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2024-04-18 16:20:23,243 INFO     ___FILE_ONLY___ You are logged in as: [BriceGoodwin@devore.services].
+
+
+2024-04-18 16:20:23,320 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:20:23,949 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2024-04-18 16:20:46,508 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-04-18 16:20:46,955 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects?alt=json HTTP/1.1" 400 None
+2024-04-18 16:20:46,960 WARNING  root            Project creation failed: HttpError accessing <https://cloudresourcemanager.googleapis.com/v1/projects?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 18 Apr 2024 20:20:47 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'server-timing': 'gfet4t7; dur=160', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "field [project_id] has issue [project_id contains invalid characters]",
+    "status": "INVALID_ARGUMENT",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.BadRequest",
+        "fieldViolations": [
+          {
+            "field": "project_id",
+            "description": "project_id contains invalid characters"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "url": "https://cloud.google.com/resource-manager/reference/rest/v1/projects"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+Please make sure to create the project [fraudfox vm] using
+    $ gcloud projects create fraudfox vm
+or change to another project using
+    $ gcloud config set project <PROJECT ID>
+2024-04-18 16:20:46,961 DEBUG    root            Chosen display Format:default
+2024-04-18 16:20:46,963 INFO     root            Display format: "default"
+2024-04-18 16:20:46,976 DEBUG    root            Metrics reporting process started...

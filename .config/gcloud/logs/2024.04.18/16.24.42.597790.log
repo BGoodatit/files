@@ -1,0 +1,21 @@
+2024-04-18 16:24:42,604 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2024-04-18 16:24:42,605 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2024-04-18 16:24:42,632 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'import']
+2024-04-18 16:24:42,669 DEBUG    root            Running [gcloud.compute.instances.import] with arguments: [--source-uri: "gs:/Users/adriot/virtual-machines.localized/ffox.ova", INSTANCE_NAME: "ffox.ova\n"]
+2024-04-18 16:24:42,672 DEBUG    root            (gcloud.compute.instances.import) Invalid value for [INSTANCE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+Traceback (most recent call last):
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 815, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 161, in Run
+    self._ValidateArgs(args, compute_client)
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 148, in _ValidateArgs
+    self._ValidateInstanceName(args)
+  File "/Users/adriot/google-cloud-sdk/lib/surface/compute/instances/import.py", line 124, in _ValidateInstanceName
+    raise exceptions.InvalidArgumentException(
+googlecloudsdk.calliope.exceptions.InvalidArgumentException: Invalid value for [INSTANCE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+2024-04-18 16:24:42,672 ERROR    root            (gcloud.compute.instances.import) Invalid value for [INSTANCE_NAME]: Name must start with a lowercase letter followed by up to 63 lowercase letters, numbers, or hyphens, and cannot end with a hyphen.
+2024-04-18 16:24:42,677 DEBUG    root            Metrics reporting process started...
