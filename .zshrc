@@ -53,6 +53,15 @@ alias srcconfig=" source ~/.zshrc"
 alias hidedesktop="defaults write com.apple.finder CreateDesktop false; killall Finder"
 # Alias to show desktop icons
 alias desktop="defaults write com.apple.finder CreateDesktop true; killall Finder"
+#   cleanupDS:  Recursively delete .DS_Store files
+#   -------------------------------------------------------------------
+    alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
+#   -------------------------------------------------------------------
+#   finderShowHidden:   Show hidden files in Finder
+    alias findHidden='defaults write com.apple.finder ShowAllFiles TRUE'
+    #   finderHideHidden:   Hide hidden files in Finder
+    alias finderdefault='defaults write com.apple.finder ShowAllFiles FALSE'
+#   -------------------------------------------------------------------
 # Alias to hide system files
 alias hide="defaults write com.apple.finder AppleShowAllFiles -boolean false; killall Finder"
 # Alias to show system files
@@ -60,6 +69,29 @@ alias show="defaults write com.apple.finder AppleShowAllFiles -boolean true; kil
 # Charging sound alerts
 alias charging="defaults write com.apple.PowerChime ChimeOnAllHardware -bool true && open /System/Library/CoreServices/PowerChime.app"
 alias charged="defaults write com.apple.PowerChime ChimeOnAllHardware -bool false && open /System/Library/CoreServices/PowerChime.app"
+#   extract:  Extract most know archives with one command
+#   ---------------------------------------------------------
+    extract () {
+        if [ -f $1 ] ; then
+          case $1 in
+            *.tar.bz2)   tar xjf $1     ;;
+            *.tar.gz)    tar xzf $1     ;;
+            *.bz2)       bunzip2 $1     ;;
+            *.rar)       unrar e $1     ;;
+            *.gz)        gunzip $1      ;;
+            *.tar)       tar xf $1      ;;
+            *.tbz2)      tar xjf $1     ;;
+            *.tgz)       tar xzf $1     ;;
+            *.zip)       unzip $1       ;;
+            *.Z)         uncompress $1  ;;
+            *.7z)        7z x $1        ;;
+            *)     echo "'$1' cannot be extracted via extract()" ;;
+             esac
+         else
+             echo "'$1' is not a valid file"
+         fi
+    }
+
 alias srcconfig="source ~/.zshrc"
 # Environment management (Python, Ruby, etc.)
 export PYENV_ROOT="$HOME/.pyenv"
@@ -187,7 +219,17 @@ if [ -f '/Users/adriot/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/adriot/g
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/adriot/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/adriot/google-cloud-sdk/completion.zsh.inc'; fi
 
-for DOTFILE in `find /Users/adriot/.dotfiles/system`
-do
-  [ -f $DOTFILE ] && source $DOTFILE
-done
+export PATH="/usr/local/sbin:$PATH"
+# Function to open Visual Studio Code
+code() { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args "$@"; }
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# Starship prompt
+eval "$(starship init zsh)"
+
+# Function to set tab and window name to current directory and Git branch
+function set_tab_name() {
+  echo -ne "\033]0;$(basename "$PWD") - $(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "No Git")\007"
+}
+
+# Update tab name dynamically with Starship
+precmd() { set_tab_name; }
